@@ -109,9 +109,3 @@ FC2_analysis/<fc_file_id>/plant1/Ft_2/
 ```
 
 The pixel and summary CSV files include `dumm_layer` and `dumm_member` columns so each result can be traced back to the original tar member.
-
-## Notes
-
-- Large `.tar` files, `.dumm` files, root mask folders, and generated analysis folders are ignored by Git.
-- If you need to share example data, add a small anonymized sample in a separate folder and adjust `.gitignore` deliberately.
-- The alignment parameters are defined near the top of `FC_analysis.py` in `ALIGNMENT_CONFIG`.
