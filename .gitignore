@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment files
+.env
+.env.*
+
+# Raw FluorCam/root analysis inputs
+FC1_TAR/
+FC2_TAR/
+ROOT1_analysis/
+ROOT2_analysis/
+*.tar
+*.dumm
+
+# Generated analysis outputs
+FC1_analysis/
+FC2_analysis/
+fc_analysis_run_parameters.json
+root_mask_processing_summary.csv
+
+# Temporary files
+tmp/
+temp/
+*.log
