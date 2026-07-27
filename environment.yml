@@ -9,3 +9,4 @@ dependencies:
   - pillow>=10.0
   - scipy>=1.11
   - scikit-image>=0.22
+  - pyarrow>=14
