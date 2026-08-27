@@ -1,8 +1,4 @@
-# FC Improvement
-
-Utilities for combining FluorCam `.tar` acquisitions with root mask outputs and exporting fluorescence measurements per root region.
-
-The current script, `FC_analysis.py`, reads FluorCam tar files, extracts every `.dumm` image inside each tar, reconstructs and aligns the fluorescence image, applies plant/root masks, and exports pixel-level values, summary statistics, and overlay images. Multiple `.dumm` files in one tar are processed as separate layers named `Ft_1`, `Ft_2`, and so on.
+`FC_analysis.py`, reads FluorCam tar files, extracts every `.dumm` image inside each tar, reconstructs and aligns the fluorescence image, applies plant/root masks, and exports pixel-level values, summary statistics, and overlay images. Multiple `.dumm` files in one tar are processed as separate layers named `Ft_1`, `Ft_2`, and so on.
 
 ## Repository Contents
 
@@ -12,8 +8,6 @@ requirements.txt     pip dependency list
 environment.yml      conda environment definition
 .gitignore           Excludes local data, outputs, IDE files, and virtualenvs
 ```
-
-Raw data and generated outputs are intentionally not tracked by Git.
 
 ## Expected Input Layout
 
@@ -58,8 +52,6 @@ python -m pip install -r requirements.txt
 
 ## Usage
 
-Edit the `PYCHARM_SETTINGS` block at the bottom of `FC_analysis.py`:
-
 ```python
 PYCHARM_SETTINGS = {
     "working_directory": r"C:\path\to\your\working_directory",
@@ -68,8 +60,6 @@ PYCHARM_SETTINGS = {
     "root_set": "ROOT2",
 }
 ```
-
-Then run:
 
 ```powershell
 python FC_analysis.py
@@ -84,8 +74,6 @@ both
 ```
 
 ## Outputs
-
-Results are written under the working directory:
 
 ```text
 FC1_analysis/
@@ -108,4 +96,3 @@ FC2_analysis/<fc_file_id>/plant1/Ft_2/
   run_parameters.json
 ```
 
-The pixel and summary CSV files include `dumm_layer` and `dumm_member` columns so each result can be traced back to the original tar member.
